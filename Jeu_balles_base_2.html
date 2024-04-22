@@ -24,25 +24,18 @@ function principale(){
 function bouger(mov){
 
 	//Code à créer pour faire bouger la boule enemy
-	var ballBX = parseInt(document.getElementById('bluBall').getAttribute("cx"));
-		   var ballBY = parseInt(document.getElementById('bluBall').getAttribute("cy"));
-	switch (mov.keyCode){
-			 //gauche blue
-			    case 37:
-			ballBX -= 15;
-                    	if(ballBX<15){ballBX=15;}
-			document.getElementById('blueBall').setAttribute("cx", ballBX);
-			break;
+		   var ballBX = parseInt(document.getElementById('blueBall').getAttribute("cx"));
+		   var ballBY = parseInt(document.getElementById('blueBall').getAttribute("cy"));
 
-			//droite blue
+	
+	ballX -= 15;
+                    	if(ballX<15){ballX=15;}
+			document.getElementById('blueBall').setAttribute("cx", ballX);
+		   
+			
 			   
-		 case 39:
-			ballBX += 15;
-                    	if(ballBX>885){ballBX=885;}
-			document.getElementById('blueBall').setAttribute("cx", ballBX);
-			break;
 		
-	}
+	
 	
 	
 }
@@ -51,8 +44,7 @@ function bouger(mov){
 function deplacement(evt) {
 		   var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
 		   var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
-
-		   
+		
            switch (evt.keyCode) {
                 // Gauche 
                 case 37:
