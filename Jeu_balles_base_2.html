@@ -27,7 +27,7 @@ function bouger(mov){
 		   var ballBX = parseInt(document.getElementById('blueBall').getAttribute("cx"));
 		   var ballBY = parseInt(document.getElementById('blueBall').getAttribute("cy"));
 		 var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
-		document.getElementById('blueBall').setAttribute("cy", ballBY);
+		document.getElementById('blueBall').setAttribute("cy", ballY);
 	ballBX -= 15;
                     	if(ballBX<15){ballBX=15;}
 			document.getElementById('blueBall').setAttribute("cx", ballBX);
