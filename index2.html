@@ -4,11 +4,11 @@
 <script>
 function affichage(){
 	document.getElementById('afficher1');
-	if(document.getElementById('afficher1').checked){
+	if(afficher1.checked){
 			img1.src="image1.jpg";
 		}
 }
-function cacher(){
+//function cacher(){
 	document.getElementById('DuTexte').style.display="None";
 }
 function presenter(){
@@ -20,7 +20,7 @@ function controler(){
 			alert("Bouton option coché");
 		}
 	else{alert("Bouton option NON coché");}		
-}
+}//
 
 </script>
 </head>
@@ -31,15 +31,16 @@ function controler(){
 <h2>image(s) à afficher?</h2>
 	
 	<p>image1<input type="checkbox" id="afficher1"></p>
+	<button onclick="affichage"()">Check</button>
 	<img src="image1.jpg" id="img1">
-<button onclick="affichage"()">Check</button>
 
-<button onclick="affichage()">Afficher</button>
+
+<!--<button onclick="affichage()">Afficher</button>
 <hr/>
 <p id="DuTexte">Ma phrase de texte</p>
 <button onclick="presenter()">Presenter</button>
 <button onclick="cacher()">Cacher</button>
-<hr/>
+<hr/>-->
 
 
 </body>
