@@ -49,14 +49,14 @@ function deplacement(evt) {
                 case 38:
 ballX -= 15;
                     	if(ballX>15){ballX=15;}
-			document.getElementById('ball').setAttribute("cx", ballX);
+			document.getElementById('ball').setAttribute("cy", ballX);
 			break;
 
 		// Bas 
                 case 40:
 ballX += 15;
                     	if(ballX>385){ballX=15;}
-			document.getElementById('ball').setAttribute("cx", ballX);
+			document.getElementById('ball').setAttribute("cy", ballX);
 			break;
 
             }
