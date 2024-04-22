@@ -31,6 +31,9 @@ function bouger(){
 function deplacement(evt) {
 		   var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
 		   var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
+
+		   var ballBX = parseInt(document.getElementById('bluBall').getAttribute("cx"));
+		   var ballBY = parseInt(document.getElementById('bluBall').getAttribute("cy"));
            switch (evt.keyCode) {
                 // Gauche 
                 case 37:
@@ -38,13 +41,25 @@ function deplacement(evt) {
                     	if(ballX<15){ballX=15;}
 			document.getElementById('ball').setAttribute("cx", ballX);
 			break;
+			   //gauche blue
+			    case 37:
+			ballBX -= 15;
+                    	if(ballBX<15){ballBX=15;}
+			document.getElementById('blueBall').setAttribute("cx", ballBX);
+			break;
                 // Droite 
                 case 39:
 			ballX += 15;
                     	if(ballX>885){ballX=885;}
 			document.getElementById('ball').setAttribute("cx", ballX);
 			break;
-
+			   //droite blue
+			   
+		 case 39:
+			ballBX += 15;
+                    	if(ballBX>885){ballBX=885;}
+			document.getElementById('blueBall').setAttribute("cx", ballBX);
+			break;
 		// Haut 
                 case 38:
 			ballY -= 15;
