@@ -26,8 +26,8 @@ function bouger(mov){
 	//Code à créer pour faire bouger la boule enemy
 		   var ballBX = parseInt(document.getElementById('blueBall').getAttribute("cx"));
 		   var ballBY = parseInt(document.getElementById('blueBall').getAttribute("cy"));
-
-	
+		 var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
+		document.getElementById('blueBall').setAttribute("cy", ballBY);
 	ballBX -= 15;
                     	if(ballBX<15){ballBX=15;}
 			document.getElementById('blueBall').setAttribute("cx", ballBX);
