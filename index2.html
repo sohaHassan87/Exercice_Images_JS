@@ -6,17 +6,17 @@
 	
 function affichage(){
 	if(document.getElementById('afficher1').checked){
-		document.getElementById(img1).style.display="block";
+		document.getElementById(img1).style.display="Block";
 		}
 	else{document.getElementById('img1').style.display="None";}
 	
 	if(document.getElementById('afficher2').checked){
-		document.getElementById(img2).style.display="block";
+		document.getElementById(img2).style.display="Block";
 		}
 	else{document.getElementById('img2').style.display="None";}
 	
 	if(document.getElementById('afficher3').checked){
-		document.getElementById(img3).style.display="block";
+		document.getElementById(img3).style.display="Block";
 		}
 	else{document.getElementById('img3').style.display="None";}
 }
@@ -29,13 +29,13 @@ function affichage(){
 <h1>image(s) à afficher?</h1>
 	
 	<p>image1<input type="checkbox" id="afficher1"></p>
-	<img src="Image1.jpg" id="img1" style="display:"none;">
+	<img src="Image1.jpg" id="img1" style="display:None;">
 	
 	<p>image2<input type="checkbox" id="afficher2"></p>
-	<img src="Image2.jpg" id="img2" style="display:"none;">
+	<img src="Image2.jpg" id="img2" style="display:None;">
 	
 	<p>image3<input type="checkbox" id="afficher3"></p>
-	<img src="Image3.jpg" id="img3" style="display:"none;">
+	<img src="Image3.jpg" id="img3" style="display:None;">
 	
 	<button onclick="affichage()">Check</button>
 	
