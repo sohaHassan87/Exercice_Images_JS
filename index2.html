@@ -3,13 +3,16 @@
 <head>
 <script>
 function affichage(){
-	alert("Tout es OK !");
+	document.getElementById('afficher1');
+	if(document.getElementById('afficher1').checked){
+			img1.src="image1.jpg";
+		}
 }
 function cacher(){
 	document.getElementById('DuTexte').style.display="None";
 }
 function presenter(){
-	document.getElementById('DuTexte').style.display="img";
+	document.getElementById('DuTexte').style.display=;
 }
 
 function controler(){
@@ -23,17 +26,20 @@ function controler(){
 </head>
 <body>
 <h1>Mes outils</h1>
-	<h2>soooo</h2>
+	
 <hr/>
-<h2>Boite de dialogue</h2>
-<button onclick="affichage()">Afficher</button><img src="image1.jpg">
+<h2>image(s) à afficher?</h2>
+	
+	<p>image1<input type="checkbox" id="afficher1"></p>
+	<img src="image1.jpg" id="img1">
+<button onclick="affichage"()">Check</button>
+
+<button onclick="affichage()">Afficher</button>
 <hr/>
 <p id="DuTexte">Ma phrase de texte</p>
 <button onclick="presenter()">Presenter</button>
 <button onclick="cacher()">Cacher</button>
 <hr/>
-<p>image1<input type="checkbox" id="Control"></p>
-<button onclick="presenter()">Check</button>
 
 
 </body>
